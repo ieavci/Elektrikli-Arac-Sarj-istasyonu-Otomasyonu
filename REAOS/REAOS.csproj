@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA210260-567A-4FA7-A726-BFA4D6E8E043}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>REAOS</RootNamespace>
+    <AssemblyName>REAOS</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\metroDeneme\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\frmAdminAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmAdminAnaSayfa.Designer.cs">
+      <DependentUpon>frmAdminAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmSatisGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmSatisGoruntule.Designer.cs">
+      <DependentUpon>frmSatisGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaslangic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaslangic.Designer.cs">
+      <DependentUpon>frmBaslangic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri\frmHesapla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri\frmHesapla.Designer.cs">
+      <DependentUpon>frmHesapla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri\frmMusteriAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri\frmMusteriAnaSayfa.Designer.cs">
+      <DependentUpon>frmMusteriAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri\frmMusteriAyarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri\frmMusteriAyarlar.Designer.cs">
+      <DependentUpon>frmMusteriAyarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmMusteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmMusteriler.Designer.cs">
+      <DependentUpon>frmMusteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmPersonel.Designer.cs">
+      <DependentUpon>frmPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri\frmMusteriKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri\frmMusteriKayit.Designer.cs">
+      <DependentUpon>frmMusteriKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri\frmSatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri\frmSatis.Designer.cs">
+      <DependentUpon>frmSatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\frmYakıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\frmYakıt.Designer.cs">
+      <DependentUpon>frmYakıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri\frmSatisYukleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri\frmSatisYukleme.Designer.cs">
+      <DependentUpon>frmSatisYukleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sqlbaglantisi.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin\frmAdminAnaSayfa.resx">
+      <DependentUpon>frmAdminAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmSatisGoruntule.resx">
+      <DependentUpon>frmSatisGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaslangic.resx">
+      <DependentUpon>frmBaslangic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri\frmHesapla.resx">
+      <DependentUpon>frmHesapla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri\frmMusteriAnaSayfa.resx">
+      <DependentUpon>frmMusteriAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri\frmMusteriAyarlar.resx">
+      <DependentUpon>frmMusteriAyarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmMusteriler.resx">
+      <DependentUpon>frmMusteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmPersonel.resx">
+      <DependentUpon>frmPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri\frmMusteriKayit.resx">
+      <DependentUpon>frmMusteriKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri\frmSatis.resx">
+      <DependentUpon>frmSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\frmYakıt.resx">
+      <DependentUpon>frmYakıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri\frmSatisYukleme.resx">
+      <DependentUpon>frmSatisYukleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
